@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Producto - Masus</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="main-content">
+        <header>
+            <div class="container">
+                <h1 class="site-title">Bienvenido a Masus</h1>
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./img/logo.png" alt="Masus Logo" class="logo">
+                    </a>
+            <span class="menu-text">MASUS</span>
+
+                    <button
+                      class="navbar-toggler"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#navbarNav"
+                      aria-controls="navbarNav"
+                      aria-expanded="false"
+                      aria-label="Toggle navigation"
+                    >
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="showdata.html">Ver Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="form.html">Agregar Producto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main class="container mt-5">
+            <h2>Agregar un Producto</h2>
+            <form id="product-form">
+                <div class="mb-3">
+                    <label for="product-name" class="form-label">Nombre del Producto</label>
+                    <input type="text" class="form-control" id="product-name">
+                </div>
+                <div class="mb-3">
+                    <label for="product-price" class="form-label">Precio</label>
+                    <input type="number" class="form-control" id="product-price">
+                </div>
+                <div class="mb-3">
+                    <label for="product-description" class="form-label">Descripción</label>
+                    <textarea class="form-control" id="product-description"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Guardar Producto</button>
+            </form>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h2>Sobre Masus</h2>
+                <p>
+                    Masus es una licorería premium que ofrece una selección exclusiva de los mejores licores del mundo. 
+                    Comprometidos con la calidad, nuestro objetivo es proporcionar una experiencia única para los amantes del buen licor.
+                </p>
+            </div>
+            <div class="footer-links">
+                <h2>Enlaces útiles</h2>
+                <ul>
+                    <li><a href="#about-us">Quiénes somos</a></li>
+                    <li><a href="#gallery">Galería</a></li>
+                    <li><a href="#contact">Contáctanos</a></li>
+                    <li><a href="#terms">Términos y condiciones</a></li>
+                    <li><a href="#privacy">Política de privacidad</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h2>Suscríbete</h2>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Tu correo electrónico" required />
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+            <div class="footer-social">
+                <h2>Síguenos</h2>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Masus Licorería. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="./JS/crud.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
